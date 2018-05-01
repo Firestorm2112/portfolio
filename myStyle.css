@@ -2,7 +2,7 @@
 body, html {
     height: 100%;
     margin: 0;
-    color: rgb(172, 43, 43);
+    color: rgb(83, 74, 74);
 }
 .parallax1, .parallax2, .parallax3, .parallax4 {
     position: relative;
@@ -37,15 +37,34 @@ body, html {
     min-height: 600px; 
 }
 
-textArea1 {
+.textArea1 {
     position: relative;
     padding: 50px 80px;
     text-align: justify;
-    background-color: green;
+    background-color: transparent;
 }
-textBox {
-    width: 75%;
+
+.textArea2 {
+    position: relative;
+    padding: 50px 80px;
+    text-align: justify;
+    background-color: transparent;
 }
+
+.textArea3 {
+    position: relative;
+    padding: 50px 80px;
+    text-align: justify;
+    background-color: transparent;
+}
+
+.textArea4 {
+    position: relative;
+    padding: 50px 80px;
+    text-align: justify;
+    background-color: transparent;
+}
+
 
 .caption {
     position: absolute;
@@ -62,4 +81,11 @@ textBox {
     padding: 18px;
     font-size: 25px;
     letter-spacing: 10px;
+}
+
+/*Turn off scrolling affect on tablet and phones*/
+@media only screen and (max-device-with:1024px) {
+    .parallax1, .parallax2, .parallax3, .parallax4 {
+        background-attachment: scroll;
+    }
 }
